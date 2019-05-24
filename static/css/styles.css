@@ -3,16 +3,47 @@ html, body{
     margin: 0;
 }
 header{
+    width: 100vw;
+    /* border: 1px solid black; */
+}
+
+#social-network{
+    width: inherit;
+    height: 30px;
+    background-color: #eef3f6;
+}
+
+#social-network #social-bar{
+    width: 70vw;
+    height: auto;
     margin: auto;
-    width: 80vw;
-    height: 100vh;
-    border-right: 1px solid gray;
-    border-left: 1px solid gray;
+}
+
+#social-network #social-bar #facebook{
+    float: right;
+    width: 2%;
+    margin: 1rem;
 }
 
 header nav{
-    position: absolute;
+    margin: auto;
+    width: 70vw;
+    height: auto;
+    /* border: 1px solid gray; */
+}
+
+header nav #logo{
+    width: 20%;
+    margin: 2rem;
+    /* background-color: red; */
+}
+
+img{
+    width: 100%;
+}
+
+header nav #nav-items{
     width: inherit;
-    height: 15%;
-    background-color: blue;
+    height: 50px;
+    background-color: #001841;
 }
