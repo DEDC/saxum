@@ -7,30 +7,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Saxum</title>
     <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
 </head>
 
 <body>
-    <header>
-        <div id="social-network">
+    <header class="full-container">
+        <div id="social-network" class="full-container">
             <div id="social-bar">
                 <div id="facebook">
-                    
                     <img src="static/images/facebook-icon.png" alt="">
                 </div>
             </div>
         </div>
-        <nav>
+        <nav class="container">
             <div id="logo">
                 <img src="static/images/logo.png" alt="">
             </div>
             <div id="nav-items">
-
+                <!-- <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">QUIENES SOMOS</a></li>
+                    <li><a href="#">PRODUCTOS</a></li>
+                    <li><a href="">CONTACTO</a></li>
+                    <li><a href="#">FINANCIAMIENTO</a></li>
+                </ul> -->
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section id="slider" class="full-container">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="static/images/slider-1.png" alt="" uk-cover>
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+
+            </div>
+        </section>
+        <section id="section-red" class="full-container">
+            <img src="static/images/section-2.png" alt="">
+        </section>
+        <section id="section-blue" class="full-container">
+            <img src="static/images/section-3.png" alt="">
+        </section>
+    </main>
     <footer></footer>
     <script src="static/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
 </body>
 
 </html>

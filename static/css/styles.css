@@ -2,21 +2,24 @@ html, body{
     padding: 0;
     margin: 0;
 }
-header{
-    width: 100vw;
-    /* border: 1px solid black; */
+
+.full-container{
+    width: 100%;
 }
 
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
 #social-network{
-    width: inherit;
     height: 30px;
     background-color: #eef3f6;
 }
 
 #social-network #social-bar{
-    width: 70vw;
     height: auto;
-    margin: auto;
 }
 
 #social-network #social-bar #facebook{
@@ -26,24 +29,39 @@ header{
 }
 
 header nav{
-    margin: auto;
-    width: 70vw;
     height: auto;
-    /* border: 1px solid gray; */
 }
 
 header nav #logo{
     width: 20%;
     margin: 2rem;
-    /* background-color: red; */
+}
+
+header nav #nav-items{
+    height: 70px;
+    background-color: #001841;
+}
+
+#nav-items ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-items ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+ 
+/* SLIDER */
+
+#slider{
+    
 }
 
 img{
     width: 100%;
-}
-
-header nav #nav-items{
-    width: inherit;
-    height: 50px;
-    background-color: #001841;
+    /* max-width: 100%; */
 }
