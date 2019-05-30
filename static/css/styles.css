@@ -57,8 +57,52 @@ header nav #nav-items{
  
 /* SLIDER */
 
+/* SECTION SLIDER */
 #slider{
-    
+    /* height: 100vh; */    
+}
+
+/* SECTION RED */
+#section-red{
+    background: url('../../static/images/section-2.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#section-red #content-info{
+    position: relative;
+    height: 30%;
+    background-color: white;
+}
+
+#section-red #content-cards{
+    position: relative;
+    height: 70%;
+    background-color: #eff3f6;
+}
+
+#section-red #content-info #qsomos{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    padding: 15px 0 0 50px;
+    color: black;
+}
+
+#section-red #content-info #qsomos > span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#section-red #content-info #qsomos > p{
+    font-size: 13px;
+}
+
+/* SECTION BLUE */
+#section-blue{
+    background: url('../../static/images/section-3.png') no-repeat center center;
+    background-size: cover;
+    height: 45vh;
 }
 
 img{
