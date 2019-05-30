@@ -44,8 +44,34 @@ header nav #nav-items{
 
 #nav-items ul{
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 30;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    line-height: 50px;
+}
+
+#nav-items ul li{
+    display:block;
+    float:left;
+    padding:0 10px;
+
+}
+
+#nav-items ul li:link {
+    text-decoration: none;
+}
+
+#nav-items ul li:active {
+    text-decoration: none;
+}
+
+#nav-items ul li:visited {
+    text-decoration: none;
+}
+
+#nav-items ul li:hover {
+    border-bottom: 3px solid #FF0013
 }
 
 #nav-items ul li a{
