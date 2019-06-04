@@ -129,9 +129,39 @@ header nav #nav-items{
     background: url('../../static/images/section-3.png') no-repeat center center;
     background-size: cover;
     height: 45vh;
+    color: white;
+    text-align: center;
+}
+
+ .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #FF0013;
+}
+  .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
 }
 
 img{
     width: 100%;
     /* max-width: 100%; */
+}
+
+/* SECTION WHITE */
+
+#section-white{
+    background-size: cover;
+    height: 45vh;
+    color: white;
+    text-align: center;
+}
+
+#section-white #contact{
+    position: relative;
+    height: 100%;
+    background-color: #eff3f6;
 }
