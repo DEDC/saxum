@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Saxum</title>
+    <link rel="stylesheet" href="static/css/flexboxgrid.min.css">
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
 </head>
@@ -79,13 +80,39 @@
         <section id="section-white" class="full-container">
             <div id="contact" class="container">
                 <div class="row">
-                    <div class="col">
-                        <h2>CONTACTANOS</h2>
-                    </div>
-                    <div class="col">
-                        
+                    <div class="col-xs-6">
+                        <br>
+                        <h2><b>CONTACTANOS</b></h2>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <p> 
+                            <label for="nombre" class="formato"> Nombre </label><br>
+                            <input name="username" required="required" type="text" class="input-contacto" />
+                        </p>
+                        <p> 
+                            <label for="nombre" class="formato"> Email </label><br>
+                            <input name="username" required="required" type="text" class="input-contacto"/>
+                        </p>
+                        <p> 
+                            <label for="nombre" class="formato"> Telefono </label><br>
+                            <input name="username" required="required" type="text" class="input-contacto"/>
+                        </p>
+                    </div>
+                    <div class="col-xs-6">
+                        <p> 
+                            <label for="nombre" class="formato"> Mensaje </label><br>
+                            <textarea name="textarea" rows="10" cols="50" class="input-contacto2"></textarea>
+                        </p>
+                        <a class="boton_personalizado" href="http://doctorex.mx/">ENVIAR</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-blue" class="full-container">
+            <div class="container">
+                
             </div>
         </section>
     </main>
