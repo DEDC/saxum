@@ -88,6 +88,39 @@ header nav #nav-items{
     /* height: 100vh; */    
 }
 
+.slider-texto{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    width: 50%;
+}
+
+.slider-boton-rojo{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #fd3a38;
+    border-radius: 10px;
+}
+
+.slider-boton-azul{
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #041e42;
+    border-radius: 10px;
+}
+
 /* SECTION RED */
 #section-red{
     background: url('../../static/images/section-2.png') no-repeat center center;
