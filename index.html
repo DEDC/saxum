@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="col-xs-3">
-                    
+
                 </div>
                 <div class="col-xs-3">
                     <div id="logo_header">
@@ -91,29 +91,30 @@
         <section id="section-red" class="full-container">
             <div id="content-info" class="container">
                 <div class="row">
-                <div class="col-xs-4" id="qsomos">
-                    <span>QUIENES SOMOS</span>
-                    <p>
-                        Talleres <b>SAXUM</b> con <b>36 años de experiencia</b>, dedicada al <b>diseño, fabricación,
-                            reparación, sandblasteo y pintura.</b> Ofrenciendo <b>calidad garantizada</b> en nuestros
-                        equipos.
-                    </p>
-                </div>
-                <div class="col-xs-4" id="qsomos">
-                    <span>COMERCIALIZAMOS</span><br><br>
-                    - Góndolas <br>
-                    - Remolques <br>
-                    - Semiremolques <br>
-                    - Plataformas <br>
-                    - Tanques <br>
-                    - Entre otros productos
-                </div>
-                <div class="col-xs-4" id="qsomos">
-                    <div id="remolque">
-                        <img src="static/images/remolque-gris.png" alt="">
+                    <div class="col-xs-4" id="qsomos">
+                        <span>QUIENES SOMOS</span>
+                        <p>
+                            Talleres <b>SAXUM</b> con <b>36 años de experiencia</b>, dedicada al <b>diseño, fabricación,
+                                reparación, sandblasteo y pintura.</b> Ofrenciendo <b>calidad garantizada</b> en
+                            nuestros
+                            equipos.
+                        </p>
+                    </div>
+                    <div class="col-xs-4" id="qsomos">
+                        <span>COMERCIALIZAMOS</span><br><br>
+                        - Góndolas <br>
+                        - Remolques <br>
+                        - Semiremolques <br>
+                        - Plataformas <br>
+                        - Tanques <br>
+                        - Entre otros productos
+                    </div>
+                    <div class="col-xs-4" id="qsomos">
+                        <div id="remolque">
+                            <img src="static/images/remolque-gris.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div id="content-cards" class="container">
                 <div class="card">
@@ -141,7 +142,10 @@
             <br>
             <div class="container">
                 <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, illum.</b></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur pariatur quisquam ex neque inventore, consectetur aut laboriosam, sint tempore esse praesentium amet, maiores ullam quae, officiis voluptatum ipsum id eligendi expedita suscipit vero porro quia. Consequatur soluta veritatis, cumque amet commodi, fugiat pariatur quam eum nam ad quas quis.
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur pariatur quisquam ex
+                    neque inventore, consectetur aut laboriosam, sint tempore esse praesentium amet, maiores ullam quae,
+                    officiis voluptatum ipsum id eligendi expedita suscipit vero porro quia. Consequatur soluta
+                    veritatis, cumque amet commodi, fugiat pariatur quam eum nam ad quas quis.
                 </p>
                 <a class="boton_personalizado" href="#">CONTACTANOS</a>
             </div>
@@ -154,34 +158,38 @@
                         <h2><b>CONTACTANOS</b></h2>
                     </div>
                 </div>
-                <div class="row">
+                <form action="enviarEmail.php" method="POST" class="row">
                     <div class="col-xs-6">
-                        <p> 
-                            <label for="nombre" class="formato"> Nombre </label><br>
-                            <input name="username" required="required" type="text" class="input-contacto" />
+                        <p>
+                            <label for="username" class="formato"> Nombre </label><br>
+                            <input name="username" id="username" required="required" type="text"
+                                class="input-contacto" />
                         </p>
-                        <p> 
-                            <label for="nombre" class="formato"> Email </label><br>
-                            <input name="username" required="required" type="text" class="input-contacto"/>
+                        <p>
+                            <label for="email" class="formato"> Email </label><br>
+                            <input name="email" id="email" required="required" type="text" class="input-contacto" />
                         </p>
-                        <p> 
-                            <label for="nombre" class="formato"> Telefono </label><br>
-                            <input name="username" required="required" type="text" class="input-contacto"/>
+                        <p>
+                            <label for="phone" class="formato"> Telefono </label><br>
+                            <input name="phone" id="phone" required="required" type="text" class="input-contacto" />
                         </p>
                     </div>
                     <div class="col-xs-6">
-                        <p> 
-                            <label for="nombre" class="formato"> Mensaje </label><br>
-                            <textarea name="textarea" rows="10" cols="50" class="input-contacto2"></textarea>
+                        <p>
+                            <label for="message" class="formato"> Mensaje </label><br>
+                            <textarea name="message" id="message" rows="10" cols="50"
+                                class="input-contacto2"></textarea>
                         </p>
-                        <a class="boton_personalizado" href="#">ENVIAR</a>
+                        <button class="boton_personalizado" type="submit">ENVIAR</button>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
         <section id="section-blue2" class="full-container">
             <div id="maps" class="container"><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.047348463286!2d-92.9463612856389!3d17.976533990278494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd7789355fe8d%3A0x61d53603302305a0!2sParque+de+B%C3%A9isbol+Centenario+del+27+de+Febrero!5e0!3m2!1ses-419!2smx!4v1559872050642!5m2!1ses-419!2smx" width="650" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.047348463286!2d-92.9463612856389!3d17.976533990278494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd7789355fe8d%3A0x61d53603302305a0!2sParque+de+B%C3%A9isbol+Centenario+del+27+de+Febrero!5e0!3m2!1ses-419!2smx!4v1559872050642!5m2!1ses-419!2smx"
+                    width="650" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <br>
             <footer>
@@ -195,7 +203,7 @@
                                 Talleres <b>SAXUM</b> con 36 años de experiencia,
                                 dedicada al diseño, fabricación, reparación,
                                 sandblasteo y pintura. Ofreciendo calidad
-                                garantizada en nuestros equipos. 
+                                garantizada en nuestros equipos.
                             </p>
                         </div>
                         <div class="col-xs-4" id="estilos_parrafos">
@@ -203,9 +211,10 @@
                             <b>contacto@saxum.com</b><br><br>
                             <img src="static/images/telefono.png" alt="" id="iconos"> Telefono<br>
                             <b>(01)993.000.0000</b><br><br>
-                            <img src="static/images/ubicacion.png" alt="" id="iconos"> <b>Periférico Carlos Pellicer Cámara N.
-                            2798 Col. Miguel Hidalgo y Costilla
-                            C.P. 86126</b><br>
+                            <img src="static/images/ubicacion.png" alt="" id="iconos"> <b>Periférico Carlos Pellicer
+                                Cámara N.
+                                2798 Col. Miguel Hidalgo y Costilla
+                                C.P. 86126</b><br>
                         </div>
                         <div class="col-xs-4" id="estilos_parrafos">
                             <img src="static/images/Logo facebook.png" alt="" id="iconos">
