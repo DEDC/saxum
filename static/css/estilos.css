@@ -1,0 +1,182 @@
+header{
+	background: #eef3f6;
+}
+
+.logo_header{
+	width: 60%;
+    margin: 2rem;
+}
+
+#iconos{
+	width: 10%;
+}
+
+.correo{
+	top:20%;
+}
+
+.nav-color{
+	background-color: #001841;
+}
+
+li{
+	padding-right: 80px;
+}
+
+li a{
+	font-size: 18px;
+}
+
+.slider-texto{
+	position: absolute;
+    left: 15%;
+    top: 30%;
+    width: 50%;
+    color: white; 
+}
+
+@media (max-width: 750px) {
+  .slider-texto {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  #contacto-correo {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  #contacto-telefono {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-container {
+    width: 100% !important;
+  }
+}
+
+
+#section-red{
+    background: url('../../static/images/section-2.png') no-repeat center center;
+    background-size: cover;
+    height: auto;
+}
+
+#section-red #content-info{
+    position: relative;
+    height: 35%;
+    background-color: white;
+}
+
+
+#section-red #content-info #qsomos{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    padding: 15px 0 0 50px;
+    color: black;
+}
+
+#section-red #content-info #qsomos > span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#section-red #content-info #qsomos > p{
+    font-size: 13px;
+}
+
+#remolque{
+    width: 110%;
+}
+
+#section-red #content-cards{
+    position: relative;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: #eff3f6;
+
+}
+
+#section-blue{
+    background: url('../../static/images/section-3.png') no-repeat center center;
+    background-size: cover;
+    height: 45vh;
+    color: white;
+    text-align: center;
+}
+
+#section-red #content-cards .card{
+    margin: 10px;
+
+}
+
+.label{
+    color: black;
+
+}
+
+iframe{
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+
+
+
+
+
+#section-white{
+    background-size: cover;
+    height:auto;
+    color: white;
+    text-align: center;
+}
+
+#section-white #contact{
+    position: relative;
+    background-color: #eff3f6;
+    height: auto;
+}
+
+.formato{
+    color: black;
+}
+
+.input-contacto{
+    border-radius: 10px;
+    height: 30px;
+    width: 400px; 
+}
+
+.input-contacto2{
+    border-radius: 10px; 
+}
+
+/* SECTION BLUE FOOTER */
+
+#section-blue2{
+    background: url('../../static/images/section-3.png') no-repeat center center;
+    background-size: cover;
+    height: auto;
+    color: white;
+    text-align: center;
+}
+
+#estilos_parrafos{
+    text-align: left;
+}
+
+#logo_footer{
+    width: 75%;
+    margin: 1rem;
+}
+
+#iconos{
+    width: 10%;
+}
