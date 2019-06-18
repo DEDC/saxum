@@ -72,26 +72,8 @@ li a{
     background-color: white;
 }
 
-
-#section-red #content-info #qsomos{
-    position: relative;
-    width: 30%;
-    height: 100%;
-    padding: 15px 0 0 50px;
-    color: black;
-}
-
-#section-red #content-info #qsomos > span{
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-#section-red #content-info #qsomos > p{
-    font-size: 13px;
-}
-
 #remolque{
-    width: 110%;
+    width: 100%;
 }
 
 #section-red #content-cards{
