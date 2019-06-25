@@ -2,17 +2,33 @@ header{
 	background: #eef3f6;
 }
 
+.bold{
+    font-family: 'Roboto', 'sans-serif'; 
+    font-weight: 700;    
+}
+
+.regular{
+    font-family: 'Roboto', 'sans-serif'; 
+    font-weight: 400; 
+}
+
+.light{
+    font-family: 'Roboto', 'sans-serif'; 
+    font-weight: 300;
+}
+
+.medium{
+    font-family: 'Roboto', 'sans-serif'; 
+    font-weight: 500; 
+}
+
 .logo_header{
-	width: 60%;
+	width: 50%;
     margin: 2rem;
 }
 
 #iconos{
-	width: 10%;
-}
-
-.correo{
-	top:20%;
+	width: 30px;
 }
 
 .nav-color{
@@ -25,6 +41,18 @@ li{
 
 li a{
 	font-size: 18px;
+}
+
+#contacto-correo{
+    margin-top: 40px;
+}
+
+#contacto-telefono{
+    margin-top: 40px;
+}
+
+#boton-cotizacion{
+    margin-top: 40px;
 }
 
 .slider-texto{
@@ -59,6 +87,45 @@ li a{
   }
 }
 
+@media (max-width: 1199px) {
+  #remolque{
+    display: none;
+    /*width: 300px !important;
+    margin-left: -150px !important;
+    margin-top: 0px !important;*/
+  }
+  #remolque2{
+    display: block !important;
+  }
+}
+
+@media (max-width: 1600px) {
+  #remolque2{
+    display: none;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  #comercializamos, #quienes{
+    text-align: center;
+  }
+}
+
+
+
+
+
+@media (max-width: 991px) {
+  #remolque{
+
+    position: relative !important;
+    width: 50% !important;
+    margin: auto !important;
+    padding: 10px;
+  }
+}
+
 
 #section-red{
     background: url('../../static/images/section-2.png') no-repeat center center;
@@ -70,19 +137,40 @@ li a{
     position: relative;
     height: 35%;
     background-color: white;
+    padding: 10px 50px 10px 50px;
 }
 
 #remolque{
-    width: 100%;
+    position: absolute;
+    width: 470px;
+    margin-left: -210px;
+    margin-top: -60px;
 }
+
 
 #section-red #content-cards{
     position: relative;
     height: auto;
-    padding-bottom: 10px;
+    padding: 70px 50px 70px 50px; 
     background-color: #eff3f6;
 
 }
+
+.vermas{
+    width: 80%;
+    margin-top: 20px !important;
+}
+
+.btn{
+    border-radius: 0 !important;
+}
+
+.card-footer{
+    height: 50px !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
 
 #section-blue{
     background: url('../../static/images/section-3.png') no-repeat center center;
