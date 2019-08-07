@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="static/css/estilos.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header>
     <div class="container-fluid">
@@ -55,23 +54,16 @@
               <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Quienes somos</a>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Productos</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a class="nav-link" href="#somos" data-ancla="somos">Quienes somos</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#prod" data-ancla="prod">Productos</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Financiamiento</a>
+              <a class="nav-link" href="#contac" data-ancla="contac">Contacto</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#financ" data-ancla="financ">Financiamiento</a>
             </li>
           </ul>
         </div>
@@ -96,10 +88,10 @@
     </div>
 
     <section id="section-red">
-      <div id="content-info" class="container">
+      <a name="somos" id="somos"><div id="content-info" class="container"></a>
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-5 regular"><br>
-            <h3 id="quienes"><b>QUIENES SOMOS</b></h3><br>
+            <h3><b>QUIENES SOMOS</b></h3><br>
             <span>Talleres <span class="bold">SAXUM</span> con <span class="bold">36 años de experiencia</span>,
               dedicada al <span class="bold">diseño, fabricación, reparación, sandblasteo</span> y <span
                 class="bold">pintura.</span> Ofrenciendo <span class="bold">calidad garantizada</span> en nuestros
@@ -125,7 +117,8 @@
           </div>
         </div>
       </div>
-      <div id="content-cards" class="container">
+      <a name="prod" id="prod"><div id="content-cards" class="container"></a>
+      
         <h3 class="bold"><b>PRODUCTOS</b></h3>
         <div class="card-deck">
 
@@ -171,20 +164,18 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <br><br>
-            <h5><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptate.</b></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aspernatur pariatur quisquam ex
-              neque inventore, consectetur aut laboriosam, sint tempore esse praesentium amet, maiores ullam quae,
-              officiis voluptatum ipsum id eligendi expedita suscipit vero porro quia. Consequatur soluta
-              veritatis, cumque amet commodi, fugiat pariatur quam eum nam ad quas quis.
-            </p>
+            <br><br><br>
+            <!-- <h5><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptate.</b></h5> -->
+            <h3>PONTE EN CONTACTO CON NOSOTROS Y ADQUIERA LOS EQUIPOS DE ACUERDO A SUS NECECIDADES CON LA MEJOR CALIDAD Y PRECIO .
+            </h3><br>
             <button type="button" class="btn btn-danger medium">CONTACTANOS</button>
           </div>
         </div>
       </div>
     </section>
     <section id="section-white">
-      <div id="contact" class="container">
+      <a name="contac" id="contac"><div id="contact" class="container"></a>
+      
         <h3 class="text-left label bold">CONTACTANOS</h3>
 
         <form action="enviarEmail.php" method="POST">
@@ -215,7 +206,7 @@
       </form>
         <div class="container"><br>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.021811600742!2d-92.97607758511523!3d17.977722187727384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMTfCsDU4JzM5LjgiTiA5MsKwNTgnMjYuMCJX!5e0!3m2!1ses-419!2smx!4v1565046681462!5m2!1ses-419!2smx" 
-          width="650" height="220" frameborder="0" style="border:0" allowfullscreen>  
+          width="700" height="280" frameborder="0" style="border:0" allowfullscreen>  
           </iframe>
         </div>
       </div>
@@ -223,7 +214,8 @@
     <section id="section-blue2" class="full-container">
       <br>
       <footer>
-        <div class="container">
+        <a name="financ" id="financ"><div class="container"></a>
+        
           <div class="row">
             <div class="col-lg-4 text-left">
               <div id="logo_footer">
@@ -267,6 +259,17 @@
   <script src="static/js/main.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="static/js/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+      $('.nav-link').click(function(e){       
+        e.preventDefault();   //evitar el eventos del enlace normal
+        var strAncla=$(this).attr('href'); //id del ancla
+      $('body,html').stop(true,true).animate({        
+        scrollTop: $(strAncla).offset().top
+      },1000);
+    });
+  });
+  </script>
 </body>
 
 </html>
