@@ -272,10 +272,5 @@ iframe{
 }
 
 .uk-button {
-   display:block;
-  margin-left: auto;
-  margin-right: auto;
+    display:block;
 }
-
-.uk-button-default {
-    border: none;
