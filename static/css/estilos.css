@@ -270,3 +270,12 @@ iframe{
 #contact{
     padding: 50px;
 }
+
+.uk-button {
+   display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uk-button-default {
+    border: none;

@@ -6,6 +6,8 @@
   <title>Saxum</title>
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
   <link rel="stylesheet" href="static/css/bootstrap.min.css">
   <link rel="stylesheet" href="static/css/estilos.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
@@ -62,9 +64,6 @@
             <li class="nav-item active">
               <a class="nav-link" href="#contac" data-ancla="contac">Contacto</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#financ" data-ancla="financ">Financiamiento</a>
-            </li>
           </ul>
         </div>
       </nav>
@@ -78,8 +77,6 @@
           <div class="slider-texto bold">
             <h1><span>Ideales <span class="light">para</span> Transporte <span class="light">de</span> Materiales <span
                   class="light">y</span> Residuos Peligrosos.</span></h1>
-            <button type="button" class="btn btn-danger">VER PRODUCTOS</button>
-            <button type="button" class="btn btn-primary active">CONTACTANOS</button>
           </div>
         </div>
       </div>
@@ -183,20 +180,10 @@
                 <p>-Fabricadas con suspensión neumática.</p>
                 <p>-Permite el transporte de cargas  pesadas y sobredimensionadas.</p>
                 <p>-Brinda gran estabilidad.</p></p>
+                <br><br><br>
+                <h5 class="card-title bold">LOW BOY TIPO PETROLERO</h5>
+                <p class="card-text light">Diseño y fabricación  especial para maquinaria pesada, estructuras, tanques, equipos industriales para  transportar.</p>
             </div>
-            
-          </div>
-          <div class="card">
-            <img src="static/images/img-card-6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <br><br><br><br>
-              <h5 class="card-title bold">LOW BOY TIPO PETROLERO</h5>
-              <p class="card-text light">Diseño y fabricación  especial para maquinaria pesada, estructuras, tanques, equipos industriales para  transportar.</p>
-
-            </div>
-            <!-- <div class="card-footer text-center">
-              <button type="button" class="btn btn-danger vermas medium">LEER MÁS</button>
-            </div> -->
           </div>
         </div>
         <div class="card-deck">
@@ -236,6 +223,32 @@
             </div> -->
           </div>
         </div>
+
+<div uk-lightbox>
+    <a class="uk-button uk-button-default" href="static/images/02.jpg" data-caption="Low Boy tipo petrolero"><h5>VER GALERIA</h5></a>
+    <a class="uk-button uk-button-default" href="static/images/03.jpg" data-caption="Low Boy tipo petrolero"></a>
+    <a class="uk-button uk-button-default" href="static/images/04.jpg" data-caption="Low Boy tipo petrolero"></a>
+    <a class="uk-button uk-button-default" href="static/images/05.jpg" data-caption="Plataforma"></a>
+    <a class="uk-button uk-button-default" href="static/images/06.jpg" data-caption="Plataforma"></a>
+    <a class="uk-button uk-button-default" href="static/images/07.jpg" data-caption="Tanque Atmosferico"></a>
+    <a class="uk-button uk-button-default" href="static/images/08.jpg" data-caption="Tanque Atmosferico"></a>
+    <a class="uk-button uk-button-default" href="static/images/09.jpg" data-caption="Tanque Atmosferico"></a>
+    <a class="uk-button uk-button-default" href="static/images/10.jpg" data-caption="Tanque Atmosferico"></a>
+    <a class="uk-button uk-button-default" href="static/images/11.jpg" data-caption="Volteo Petrolero"></a>
+    <a class="uk-button uk-button-default" href="static/images/12.jpg" data-caption="Volteo Petrolero"></a>
+    <a class="uk-button uk-button-default" href="static/images/13.jpg" data-caption="Volteo Petrolero"></a>
+    <a class="uk-button uk-button-default" href="static/images/14.jpg" data-caption="Volteo Petrolero"></a>
+    <a class="uk-button uk-button-default" href="static/images/15.jpg" data-caption="Tanque UPV"></a>
+    <a class="uk-button uk-button-default" href="static/images/16.jpg" data-caption="Tanque UPV"></a>
+    <a class="uk-button uk-button-default" href="static/images/17.jpg" data-caption="Tanque UPV"></a>
+</div>
+
+</div>
+
+        
+
+
+
       </div>
     </section>
     <section id="section-blue">
@@ -337,6 +350,9 @@
   <script src="static/js/main.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="static/js/bootstrap.min.js"></script>
+  <!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
   <script>
     $(function() {
       $('.nav-link').click(function(e){       
